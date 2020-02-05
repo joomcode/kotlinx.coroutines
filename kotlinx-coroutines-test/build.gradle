@@ -1,3 +1,5 @@
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 dependencies {
     implementation project(":kotlinx-coroutines-debug")
 }
