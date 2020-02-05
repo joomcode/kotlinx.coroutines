@@ -47,6 +47,18 @@ publishing {
                 password = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
             }
         }
+
+        if (project.hasProperty('mavenUrl')) {
+            maven {
+                name = 'Joom'
+                url = project.property('mavenUrl')
+
+                credentials {
+                    username = project.property('mavenUser')
+                    password = project.property('mavenPassword')
+                }
+            }
+        }
     }
 
     if (!isMultiplatform && !isBom) {

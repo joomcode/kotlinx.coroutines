@@ -37,10 +37,6 @@ public final class kotlinx/coroutines/debug/State : java/lang/Enum {
 	public static fun values ()[Lkotlinx/coroutines/debug/State;
 }
 
-public synthetic class kotlinx/coroutines/debug/internal/DebugProbesImplSequenceNumberRefVolatile {
-	public fun <init> (J)V
-}
-
 public final class kotlinx/coroutines/debug/junit4/CoroutinesTimeout : org/junit/rules/TestRule {
 	public static final field Companion Lkotlinx/coroutines/debug/junit4/CoroutinesTimeout$Companion;
 	public fun <init> (JZ)V
