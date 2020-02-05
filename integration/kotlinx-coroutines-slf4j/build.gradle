@@ -1,3 +1,5 @@
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.25'
     testCompile 'io.github.microutils:kotlin-logging:1.5.4'

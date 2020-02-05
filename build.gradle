@@ -3,6 +3,7 @@
  */
 import org.jetbrains.kotlin.konan.target.HostManager
 
+apply from: rootProject.file("gradle/atomicfu.gradle")
 apply from: rootProject.file("gradle/experimental.gradle")
 
 def rootModule = "kotlinx.coroutines"
@@ -114,7 +115,6 @@ allprojects {
 }
 
 allprojects {
-    apply plugin: 'kotlinx-atomicfu' // it also adds all the necessary dependencies
     def projectName = it.name
     repositories {
         /*

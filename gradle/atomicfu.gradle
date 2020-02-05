@@ -1,0 +1,9 @@
+apply plugin: 'kotlinx-atomicfu' // it also adds all the necessary dependencies
+
+atomicfu {
+  dependenciesVersion = '0.14.1' // set to null to turn-off auto dependencies
+  transformJvm = false // set to false to turn off JVM transformation
+  transformJs = true // set to false to turn off JS transformation
+  variant = "FU" // JVM transformation variant: FU,VH, or BOTH
+  verbose = true // set to true to be more verbose
+}
