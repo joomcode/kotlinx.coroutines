@@ -4,6 +4,8 @@
 
 ext.guava_version = '28.0-jre'
 
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 dependencies {
     compile "com.google.guava:guava:$guava_version"
 }

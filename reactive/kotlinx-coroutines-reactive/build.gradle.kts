@@ -6,6 +6,8 @@ import org.jetbrains.dokka.DokkaConfiguration.ExternalDocumentationLink
 import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URL
 
+apply(from = rootProject.file("gradle/atomicfu.gradle"))
+
 val reactiveStreamsVersion = property("reactive_streams_version")
 
 dependencies {
