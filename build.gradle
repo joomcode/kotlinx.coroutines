@@ -5,6 +5,7 @@ import org.jetbrains.kotlin.konan.target.HostManager
 import org.gradle.util.VersionNumber
 
 apply plugin: 'jdk-convention'
+apply from: rootProject.file("gradle/atomicfu.gradle")
 apply from: rootProject.file("gradle/experimental.gradle")
 
 def rootModule = "kotlinx.coroutines"
