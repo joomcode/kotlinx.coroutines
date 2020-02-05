@@ -8,6 +8,8 @@ import java.nio.file.Files
 import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
 
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 ext.tasks_version = '16.0.1'
 
 def artifactType = Attribute.of("artifactType", String)

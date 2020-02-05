@@ -3,6 +3,8 @@
  */
 targetCompatibility = JavaVersion.VERSION_1_8
 
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 dependencies {
     compile project(':kotlinx-coroutines-reactive')
     testCompile project(':kotlinx-coroutines-reactive').sourceSets.test.output

@@ -6,6 +6,8 @@ plugins {
   id 'org.openjfx.javafxplugin'
 }
 
+apply from: rootProject.file("gradle/atomicfu.gradle")
+
 javafx {
     version = javafx_version
     modules = ['javafx.controls']
